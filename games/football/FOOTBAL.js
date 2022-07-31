@@ -34,7 +34,7 @@ const options = {
 
 async function getUsersApi() {
     try {
-    //   const result= await fetch(`https:api.openligadb.de/getmatchdata/bl1/2020/8`)
+      const result= await fetch(`https://www.balldontlie.io/api/v1/stats`)
     return result.json()    
     
     }  
@@ -53,8 +53,8 @@ function usersTable() {
                 tablebody.innerHTML +=
                     `
                 <tr>
-                <td>${item.age}</td>
-                <td>${item.name.first}</td>
+                <td>${item.hometeam}</td>
+                <td>${item.position}</td>
                 <td>${item.name.last}</td>
                 <td>${item.Email}</td>
                 <td>${item.index}</td>
@@ -66,3 +66,31 @@ function usersTable() {
         })
 }
 usersTable();
+getDevice(){
+
+
+fetch('https://www.scorebat.com/video-api/v3/competition/england-premier-league/?token=[MjIxMjdfMTY1OTI2NDU3Ml9iMDNmYjEyMjExYWQ2ODJhMjYxNGE1OTY1MjExNzY2ZjUwODExZjBk]', {
+	method: 'GET'
+})
+	.then(response => response.json())
+	.then(response => {console.log(response)
+        response.forEach(element => {
+            tablebody.innerHTML +=
+            `
+        <tr>
+        <td>${item.age}</td>
+        <td>${item.name.first}</td>
+        <td>${item.name.last}</td>
+        <td>${item.Email}</td>
+        <td>${item.index}</td>
+        <td>${item.phone}</td>
+        <td>${item.picture}</td>
+        </tr>
+        `
+        });
+    
+    })
+	.catch(err => console.error(err));
+    getDevice()
+
+

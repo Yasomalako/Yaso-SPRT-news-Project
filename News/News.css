@@ -1,0 +1,76 @@
+body {
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_wether {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+
+button:hover {
+    background: #7c7c7c6b;
+}
+
+.card {
+    border: none;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.main-row {
+    margin-top: 10%;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.card img {
+    transform: translateY(-50px);
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.card .card-body {
+    visibility: hidden;
+    transform: translateY(-150px);
+    height: 0px;
+}
+
+.card:hover .card-body {
+    visibility: visible;
+    transform: rotateY(-50px);
+    transform: .5s;
+    height: auto;
+}
