@@ -76,3 +76,16 @@
                 //     <p class="card-text"><small class="text-muted">${element.source}</small></p>
                 //     </div > `
 
+//זה עובד
+                // const options = {
+                //     method: 'GET',
+                //     headers: {
+                //         'X-RapidAPI-Key': 'fefc172d83msh870ee776f986b49p1b37dcjsn8f6775fd3246',
+                //         'X-RapidAPI-Host': 'livescore6.p.rapidapi.com'
+                //     }
+                // };
+                
+                // fetch('https://livescore6.p.rapidapi.com/news/v2/list', options)
+                //     .then(response => response.json())
+                //     .then(response => console.log(response))
+                //     .catch(err => console.error(err));

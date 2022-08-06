@@ -38,39 +38,3 @@ input.search-bar {
 button:hover {
     background: #7c7c7c6b;
 }
-
-.card {
-    border: none;
-}
-
-.description {
-    text-transform: capitalize;
-    margin-left: 8px;
-}
-
-.main-row {
-    margin-top: 10%;
-}
-
-.card {
-    cursor: pointer;
-}
-
-.card img {
-    transform: translateY(-50px);
-    border-radius: 15px;
-    z-index: 1;
-}
-
-.card .card-body {
-    visibility: hidden;
-    transform: translateY(-150px);
-    height: 0px;
-}
-
-.card:hover .card-body {
-    visibility: visible;
-    transform: rotateY(-50px);
-    transform: .5s;
-    height: auto;
-}

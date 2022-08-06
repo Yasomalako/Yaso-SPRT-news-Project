@@ -58,3 +58,6 @@
 //     catch (err) { console.log(err) };
 // }
 // // getApi()
+fetch('https://jsonplaceholder.typicode.com/photos')
+.then(res => res.json())
+.then(data => {})
