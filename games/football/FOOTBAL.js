@@ -153,7 +153,7 @@ try {
                     console.log(result.topStories[counter].mainMedia.gallery.url)
                     console.log(result.topStories[counter].mainMedia.gallery.alt)
                     document.getElementById("fooballPage").innerHTML += ` <div class="card">
-                    <img src="/photos/${footBallArray[counter]}" class="card-img-top" alt="...">
+                    <img src="./photos/${footBallArray[counter]}" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title text-center">${result.topStories[key].title}</h5>
             <p class="card-text">${result.topStories[key].mainMedia.gallery.alt}</p>
