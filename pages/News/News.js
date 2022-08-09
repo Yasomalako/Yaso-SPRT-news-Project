@@ -153,7 +153,7 @@ async function basketArticals() {
                     console.log(result)
                     document.getElementById("basketNews").innerHTML += ` 
                         <div class="card">
-                        <img src="/photos/${photosGalerry[counter]}" class="card-img-top" alt="...">
+                        <img src="../../photos/${photosGalerry[counter]}" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title text-center">${result[key].title}</h5>
                                 <p class="card-text">${newText[counter]}</p>
