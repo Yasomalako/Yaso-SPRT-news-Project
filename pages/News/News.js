@@ -19,7 +19,7 @@ const footBallArray = ["chellwiil-sportnews.jpg","joshuakimich-sportnews.jpg","w
                         console.log(result.topStories[counter].mainMedia.gallery.url)
                         console.log(result.topStories[counter].mainMedia.gallery.alt)
                         document.getElementById("footNews").innerHTML += ` <div class="card">
-                        <img src="../../photos/${footBallArray[counter]}" class="card-img-top" alt="...">
+                        <img src="../../photos/${footBallArray[counter]}" style="width:300px;" class="card-img-top" alt="...">
         
             <div class="card-body">
                 <h5 class="card-title text-center">${result.topStories[key].title}</h5>
@@ -61,7 +61,7 @@ async function basketArticals() {
                     console.log(result)
                     document.getElementById("basketNews").innerHTML += ` 
                         <div class="card">
-                        <img src="../../photos/${photosGalerry[counter]}" class="card-img-top" alt="...">
+                        <img src="../../photos/${photosGalerry[counter]}" style="width:300px;" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title text-center">${result[key].title}</h5>
                                 <p class="card-text">${newText[counter]}</p>
