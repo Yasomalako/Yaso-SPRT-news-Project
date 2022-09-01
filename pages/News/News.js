@@ -9,7 +9,7 @@ const options2 = {
     };
 async function footbalArticals() {
     let counter = 0
-const footBallArray = ["chellwiil-sportnews.jpg","joshuakimich-sportnews.jpg","westbornvs watford.jpeg"]
+const footBallArray = ["chellwiil-sportnews.jpg","joshuakimich-scgsgsws.jpg","westbornvs watford.jpeg"]
     try {
         return await fetch('https://livescore6.p.rapidapi.com/news/v2/list', options2)
             .then(res => res.json())
@@ -19,14 +19,14 @@ const footBallArray = ["chellwiil-sportnews.jpg","joshuakimich-sportnews.jpg","w
                         console.log(result.topStories[counter].mainMedia.gallery.url)
                         console.log(result.topStories[counter].mainMedia.gallery.alt)
                         document.getElementById("footNews").innerHTML += ` <div class="card">
-                        <img src="../../photos/${footBallArray[counter]}" style="width:300px;" class="card-img-top" alt="...">
+                        <img src="../../photos/${footBallArray[counter]}" style="width:400px;" class="card-img-top" alt="...">
         
             <div class="card-body">
                 <h5 class="card-title text-center">${result.topStories[key].title}</h5>
                 <p class="card-text">${result.topStories[key].mainMedia.gallery.alt}</p>
             </div>
             <div class="card-footer">
-                <small class="text-muted">${result.topStories[key].publishedAt}</small>
+                <small clהשs="text-muted">${result.topStories[key].publishedAt}</small>
             </div>
     </div> `
                     }
@@ -61,7 +61,7 @@ async function basketArticals() {
                     console.log(result)
                     document.getElementById("basketNews").innerHTML += ` 
                         <div class="card">
-                        <img src="../../photos/${photosGalerry[counter]}" style="width:300px;" class="card-img-top" alt="...">
+                        <img src="../../photos/${photosGalerry[counter]}" style="width:400px;" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title text-center">${result[key].title}</h5>
                                 <p class="card-text">${newText[counter]}</p>
